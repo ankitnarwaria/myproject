@@ -19,7 +19,6 @@ import javax.servlet.annotation.WebServlet;
  */
 @WebServlet("/StudentRegistration")
 public class StudentRegistration extends GenericServlet {
-
 	private Connection cn;
 
 	public void init(ServletConfig config) throws ServletException {
