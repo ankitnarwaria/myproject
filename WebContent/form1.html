@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AADHAR REGISTRATION</title>
+<script type="text/javascript">
+	function submitForm() {
+		var nid = document.getElementById("nid");
+		if (!nid.value) {
+			alert("Please provide Name");
+			return;
+		}
+		document.forms[0].submit();
+	}
+</script>
+</head>
+<body>
+	<h1>Aadhar Reg Form 1</h1>
+	<form action="./reg" method="POST" name="adharFOrm">
+		<pre>
+NAME:    <input type="text" name="name" id="nid" /><br>
+FATHER NAME:    <input type="text" name="fname" /><br>
+MOTHER NAME:      <input type="text" name="mname" /><br>
+        <input type="hidden" name="fno" value="1" />
+     <input type="button" value="next>>" onclick="submitForm()">
+
+</pre>
+
+	</form>
+
+
+</body>
+</html>
